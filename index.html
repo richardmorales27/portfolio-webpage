@@ -242,67 +242,135 @@
 
         </section>
 
+
         <!-- =========================
-             Portfolio
+            Portfolio
         ========================== -->
-        <section id="portfolio">
+        <section id="portfolio" class="portfolio">
 
-            <h2>Portfolio</h2>
+            <div class="portfolio-container">
 
-            <p>
-                Projects I've built while developing my Cloud and DevOps skills.
-            </p>
+                <div class="portfolio-header">
+                    <p class="section-label">Portfolio</p>
 
-            <div>
-
-                <!-- Project 1 -->
-                <article>
-
-                    <h3>Serverless Help Desk</h3>
+                    <h2>Featured Projects</h2>
 
                     <p>
-                        A serverless help desk ticketing application built using
-                        AWS services.
+                        A selection of projects built to strengthen my Cloud,
+                        DevOps, automation, and infrastructure engineering skills.
                     </p>
-
-                    <a href="#">View Project</a>
-
-                </article>
+                </div>
 
 
-                <!-- Project 2 -->
-                <article>
+                <div class="project-grid">
 
-                    <h3>Terraform Infrastructure Platform</h3>
+                    <!-- Serverless Help Desk -->
+                    <article class="project-card">
 
-                    <p>
-                        A highly available AWS infrastructure platform deployed
-                        entirely using Terraform.
-                    </p>
+                        <div class="project-image">
+                            <img
+                                src="images/serverless-help-desk.png"
+                                alt="Serverless Help Desk project screenshot"
+                            >
+                        </div>
 
-                    <a href="#">View Project</a>
+                        <div class="project-content">
 
-                </article>
+                            <h3>Serverless Help Desk</h3>
+
+                            <p class="project-tech">
+                                AWS • SAM • Lambda • DynamoDB • Cognito
+                            </p>
+
+                            <p>
+                                A serverless help desk ticketing application built
+                                around AWS managed services and serverless architecture.
+                            </p>
+
+                            <a
+                                href="https://github.com/richardmorales27/serverless-helpdesk-ticketing-system.git"
+                                class="project-button"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View Project
+                            </a>
+
+                        </div>
+
+                    </article>
 
 
-                <!-- Project 3 -->
-                <article>
+                    <!-- Terraform Infrastructure Platform -->
+                    <article class="project-card">
 
-                    <h3>MiniTeams</h3>
+                        <div class="project-image">
+                            <img
+                                src="images/terraform-platform.png"
+                                alt="Terraform Infrastructure Platform project screenshot"
+                            >
+                        </div>
 
-                    <p>
-                        A containerized collaboration application built to
-                        demonstrate Docker and cloud-native application concepts.
-                    </p>
+                        <div class="project-content">
 
-                    <p>Coming Soon</p>
+                            <h3>Terraform Infrastructure Platform</h3>
 
-                </article>
+                            <p class="project-tech">
+                                AWS • Terraform • GitHub Actions
+                            </p>
+
+                            <p>
+                                A highly available AWS infrastructure platform
+                                provisioned entirely through Infrastructure as Code.
+                            </p>
+
+                            <a
+                                href="https://github.com/richardmorales27/terraform-infrastructure-platform.git"
+                                class="project-button"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View Project
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- MiniTeams -->
+                    <article class="project-card">
+
+                        <div class="project-image project-placeholder">
+                            <span>Coming Soon</span>
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>MiniTeams</h3>
+
+                            <p class="project-tech">
+                                Docker • AWS
+                            </p>
+
+                            <p>
+                                A containerized collaboration application focused on
+                                practical Docker and cloud application concepts.
+                            </p>
+
+                            <span class="project-status">
+                                Coming Soon
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
 
             </div>
 
         </section>
-
 
         <!-- =========================
              Resume
