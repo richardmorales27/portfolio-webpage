@@ -94,13 +94,12 @@ body {
 
 
 /* ========================================
-   Skills Section
+   Technology / Skills
 ======================================== */
 
 .skills {
-    padding: 60px 40px;
+    padding: 70px 40px;
 }
-
 
 .skills-container {
     max-width: 1000px;
@@ -108,22 +107,19 @@ body {
 
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 60px;
 }
-
 
 .skill-card {
     flex: 1;
-
     text-align: center;
 }
 
-
 .skill-icon {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
 
-    margin: 0 auto 20px;
+    margin: 0 auto 24px;
 
     display: flex;
     align-items: center;
@@ -131,23 +127,38 @@ body {
 
     border: 2px solid currentColor;
     border-radius: 50%;
-
-    font-size: 2rem;
 }
 
+.skill-icon svg {
+    width: 45px;
+    height: 45px;
+}
 
 .skill-card h3 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 
+    font-size: 1.1rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 }
-
 
 .skill-card p {
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
+
+/* ========================================
+   Skills - Mobile
+======================================== */
+
+@media (max-width: 768px) {
+
+    .skills-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+}
 
 /* ========================================
    Mobile
