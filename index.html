@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character Encoding -->
     <meta charset="UTF-8">
+
+    <!-- Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Richard Morales | Cloud & DevOps Portfolio</title>
+    <!-- SEO -->
+    <title>Richard Morales | Network Engineer & Cloud/DevOps</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <meta
+        name="description"
+        content="Portfolio of Richard Morales, a Network Engineer building practical projects in AWS, Cloud, DevOps, Infrastructure as Code, and automation."
+    >
+
+    <meta name="author" content="Richard Morales">
+
+    <link rel="canonical" href="https://rmorales.dev/">
+
+
+
+<!-- Open Graph / LinkedIn -->
+<meta property="og:title" content="Richard Morales | Network Engineer & Cloud/DevOps">
+
+<meta
+    property="og:description"
+    content="Portfolio of Richard Morales, featuring practical projects in AWS, Cloud, DevOps, Infrastructure as Code, and automation."
+>
+
+<meta property="og:type" content="website">
+
+<meta property="og:url" content="https://rmorales.dev/">
+
+<meta
+    property="og:image"
+    content="https://rmorales.dev/assets/images/social-preview.png"
+>
+
+<meta property="og:image:width" content="1536">
+<meta property="og:image:height" content="1024">
+
+<meta
+    property="og:image:alt"
+    content="Richard Morales — Network Engineer and aspiring Cloud/DevOps Engineer"
+>
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+
+<meta
+    name="twitter:title"
+    content="Richard Morales | Network Engineer & Cloud/DevOps"
+>
+
+<meta
+    name="twitter:description"
+    content="Portfolio featuring practical projects in AWS, Cloud, DevOps, Infrastructure as Code, and automation."
+>
+
+<meta
+    name="twitter:image"
+    content="https://rmorales.dev/assets/images/social-preview.png"
+>
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+<link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="assets/icons/favicon-32x32.png"
+>
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -18,7 +88,7 @@
         <nav class="navbar">
 
             <a href="#home" class="nav-brand">Richard Morales</a>
-            
+
             <button
                 class="nav-toggle"
                 aria-label="Toggle navigation"
@@ -58,9 +128,11 @@
                 <h2>A Network Engineer from Ventura County</h2>
 
                 <p class="hero-description">
-                    I'm an aspiring Cloud/DevOps Engineer based in Camarillo,
-                    dedicated to continually improving my skills and building
-                    practical cloud infrastructure.
+                    I build and maintain enterprise network infrastructure for
+                    the DoD, and Cloud infrastructure for personal and professional projects.
+                    I'm documenting my transition into Cloud/DevOps by turning AWS, Terraform,
+                    containers, and automation into projects that actually work.
+        
                 </p>
 
                 <a href="#about" class="hero-button">About Me</a>
@@ -68,9 +140,13 @@
             </div>
 
             <div class="hero-image">
+
+                <div class="hero-brush"></div>
+
                 <img
-                    src="images/profile.png"
-                    alt="Richard Morales"
+                    src="assets/images/headshot.png"
+                    alt="Portrait of Richard Morales"
+                    class="hero-headshot"
                 >
             </div>
 
@@ -80,132 +156,171 @@
      Technology / Skills
 ========================== -->
         <section id="skills" class="skills">
-
             <div class="skills-container">
+            <!-- Cloud -->
+            <article class="skill-card">
 
-                <!-- Cloud -->
-                <article class="skill-card">
+                <div class="skill-icon">
+                    <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M17.5 19H6a4 4 0 0 1-.5-7.97A6.5 6.5 0 0 1 18 9.5v.5a4.5 4.5 0 0 1-.5 9Z"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </div>
 
-                    <div class="skill-icon">
-                        <svg
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                        >
-                            <path
-                                d="M17.5 19H6a4 4 0 0 1-.5-7.97A6.5 6.5 0 0 1 18 9.5v.5a4.5 4.5 0 0 1-.5 9Z"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                        </svg>
-                    </div>
+                <h3>Cloud</h3>
 
-                    <h3>Cloud</h3>
+                <div class="skill-details">
+                    <p>AWS Architecture</p>
+                    <p>Serverless Systems</p>
+                    <p>Secure Static Hosting</p>
+                </div>
 
-                    <p>
-                        AWS Architecture<br>
-                        Serverless Systems
-                    </p>
-
-                </article>
-
-
-                <!-- Infrastructure as Code -->
-                <article class="skill-card">
-
-                    <div class="skill-icon">
-                        <svg
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                        >
-                            <polyline
-                                points="8 9 4 12 8 15"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-
-                            <polyline
-                                points="16 9 20 12 16 15"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-
-                            <line
-                                x1="14"
-                                y1="6"
-                                x2="10"
-                                y2="18"
-                                stroke="currentColor"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                            />
-                        </svg>
-                    </div>
-
-                    <h3>IaC</h3>
+                <div class="skill-stack">
+                    <span>Built with:</span>
 
                     <p>
-                        Terraform / SAM<br>
-                        Infrastructure
+                        S3 • CloudFront • Route 53
                     </p>
-
-                </article>
-
-
-                <!-- Kubernetes -->
-                <article class="skill-card">
-
-                    <div class="skill-icon">
-                        <svg
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                        >
-                            <circle
-                                cx="12"
-                                cy="12"
-                                r="7"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.5"
-                            />
-
-                            <circle
-                                cx="12"
-                                cy="12"
-                                r="2"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.5"
-                            />
-
-                            <line x1="12" y1="3" x2="12" y2="10" stroke="currentColor" stroke-width="1.5"/>
-                            <line x1="12" y1="14" x2="12" y2="21" stroke="currentColor" stroke-width="1.5"/>
-                            <line x1="3" y1="12" x2="10" y2="12" stroke="currentColor" stroke-width="1.5"/>
-                            <line x1="14" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="1.5"/>
-                        </svg>
-                    </div>
-
-                    <h3>Kubernetes</h3>
 
                     <p>
-                        Containers &amp;<br>
-                        Orchestration
+                        Lambda • API Gateway • DynamoDB
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- Infrastructure as Code -->
+            <article class="skill-card">
+
+                <div class="skill-icon">
+                    <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+                        <polyline
+                            points="8 9 4 12 8 15"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+
+                        <polyline
+                            points="16 9 20 12 16 15"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+
+                        <line
+                            x1="14"
+                            y1="6"
+                            x2="10"
+                            y2="18"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                        />
+                    </svg>
+                </div>
+
+                <h3>IaC</h3>
+
+                <div class="skill-details">
+                    <p>Terraform / SAM</p>
+                    <p>Reusable Infrastructure</p>
+                    <p>Automated Deployments</p>
+                </div>
+
+                <div class="skill-stack">
+                    <span>Built with:</span>
+
+                    <p>
+                        Terraform • HCL • AWS SAM
                     </p>
 
-                </article>
+                    <p>
+                        Remote State • Modules • CI/CD
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- Kubernetes -->
+            <article class="skill-card">
+
+                <div class="skill-icon">
+                    <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="7"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                        />
+
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="2"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                        />
+
+                        <line x1="12" y1="3" x2="12" y2="10" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="12" y1="14" x2="12" y2="21" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="3" y1="12" x2="10" y2="12" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="14" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </div>
+
+                <h3>Kubernetes</h3>
+
+                <div class="skill-details">
+                    <p>Containers &amp; Orchestration</p>
+                    <p>Application Deployments</p>
+                    <p>Service Networking</p>
+                </div>
+
+                <div class="skill-stack">
+                    <span>Building with:</span>
+
+                    <p>
+                        Docker • Kubernetes • kubectl
+                    </p>
+
+                    <p>
+                        Deployments • Services • ConfigMaps
+                    </p>
+                </div>
+
+            </article>         
 
             </div>
+
+
 
         </section>
 
@@ -219,8 +334,8 @@
                 <!-- About Image -->
                 <div class="about-image">
                     <img
-                        src="images/about-profile.png"
-                        alt="Richard Morales"
+                        src="assets/images/about-photo.jpeg"
+                        alt="Richard Morales in a professional setting"
                     >
                 </div>
 
@@ -230,18 +345,32 @@
 
                     <p class="section-label">About Me</p>
 
-                    <h2>I'm a Network Engineer</h2>
+                    <h2>From Networks to the Cloud</h2>
 
                     <p>
-                        Welcome to my page! I'm building a portfolio of projects
-                        as I continue my transition into Cloud and DevOps engineering.
+                        Welcome to my corner of the internet. I'm Richard, a Network Engineer
+                        from Ventura County with a background spanning enterprise networking,
+                        military communications, and IT infrastructure. These days, I'm focused
+                        on taking that foundation into Cloud and DevOps engineering. 
+                    <p>
+                        My IT career started in the United States Marine Corps, where I served 
+                        for six years and ultimately became a Sergeant (E-5) and Data Systems 
+                        Supervisor. I worked with tactical and enterprise networks, supported 
+                        NIPR and SIPR environments, and had the opportunity to support exercises
+                        both in the United States and overseas.
                     </p>
-
                     <p>
-                        My background includes network engineering, enterprise
-                        infrastructure, AWS, Infrastructure as Code, and automation.
-                        I'm continuing to expand that foundation through hands-on
-                        projects focused on modern cloud and DevOps technologies.
+                        Today, I work professionally in network engineering while building hands-on
+                        with AWS, Terraform, Docker, CI/CD, Python, and other cloud technologies. 
+                        What originally drew me toward Cloud/DevOps was realizing how much infrastructure
+                        could be automated rather than configured manually. This portfolio is where I 
+                        document that progression and, more importantly, prove what I can build. 
+                    </p>
+                    <p>
+                        Outside of technology, I enjoy traveling, fitness, history, and constantly 
+                        learning something new. I'm usually working toward another certification, 
+                        building another project, planning another trip, or convincing myself that
+                        one more AWS resource won't cost anything.
                     </p>
 
                     <a href="#resume" class="about-button">
@@ -281,8 +410,8 @@
 
                         <div class="project-image">
                             <img
-                                src="images/serverless-help-desk.png"
-                                alt="Serverless Help Desk project screenshot"
+                                src="assets/images/serverless-help-desk.png"
+                                alt="Serverless Help Desk project interface showing the AWS-based ticketing application"
                             >
                         </div>
 
@@ -300,7 +429,7 @@
                             </p>
 
                             <a
-                                href="https://github.com/richardmorales27/serverless-helpdesk-ticketing-system.git"
+                                href="https://github.com/richardmorales27/serverless-helpdesk-ticketing-system"
                                 class="project-button"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -318,8 +447,8 @@
 
                         <div class="project-image">
                             <img
-                                src="images/terraform-platform.png"
-                                alt="Terraform Infrastructure Platform project screenshot"
+                                src="assets/images/terraform-platform.png"
+                                alt="Terraform Infrastructure Platform project showing deployed AWS infrastructure"
                             >
                         </div>
 
@@ -337,7 +466,7 @@
                             </p>
 
                             <a
-                                href="https://github.com/richardmorales27/terraform-infrastructure-platform.git"
+                                href="https://github.com/richardmorales27/terraform-infrastructure-platform"
                                 class="project-button"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -398,12 +527,12 @@
                     <h2>Experience & Qualifications</h2>
 
                     <p>
-                        A summary of my technical certifications, professional
-                        experience, military background, and education.
+                        The experience, credentials, and technical foundation behind my
+                        transition from network engineering into Cloud and DevOps.
                     </p>
 
                     <a
-                        href="documents/richard-morales-resume.pdf"
+                        href="assets/resume/richard-morales-resume.pdf"
                         class="resume-button"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -423,9 +552,7 @@
                         <ul>
                             <li>AWS Certified Solutions Architect – Associate</li>
                             <li>Cisco Certified Network Associate (CCNA)</li>
-                            <li>CompTIA Security+</li>
-                            <li>CompTIA Network+</li>
-                            <li>CompTIA A+</li>
+                            <li>CompTIA: A+, Net+, Sec+</li>
                             <li>LPI Linux Essentials</li>
                         </ul>
 
@@ -453,12 +580,20 @@
                     <!-- Military Experience -->
                     <article class="resume-card">
 
-                        <h3>Military Experience</h3>
+                    <h3>Military Experience</h3>
 
-                        <div class="resume-entry">
-                            <h4>United States Marine Corps Reserve</h4>
-                            <p>Assistant Data Chief — Sergeant (E-5)</p>
-                        </div>
+                    <div class="resume-entry">
+
+                        <h4>United States Marine Corps Reserve</h4>
+
+                        <ul>
+                            <li>Six years of service</li>
+                            <li>Data Systems Supervisor</li>
+                            <li>Reached the rank of Sergeant (E-5)</li>
+                            <li>Overseas Unit Deployment</li>
+                        </ul>
+
+                    </div>
 
                     </article>
 
@@ -479,7 +614,7 @@
                         <div class="resume-entry">
                             <h4>Military & Professional Recognition</h4>
                             <p>
-                                Awards and additional recognition can be listed here.
+                                Five Military Awards and Ribbons
                             </p>
                         </div>
 
@@ -628,15 +763,26 @@
 
 
                 <!-- Email Address -->
-                <div class="contact-email">
+                <div class="contact-details">
 
-                    <p>Email</p>
+                    <p>
+                        <span class="contact-label">Email:</span>
+                        <a href="mailto:richardmorales_24@hotmail.com">
+                            richardmorales_24@hotmail.com
+                        </a>
+                    </p>
 
-                    <a href="mailto:richardmorales_24@hotmail.com">
-                        richardmorales_24@hotmail.com
-                    </a>
+                    <p>
+                        <span class="contact-label">Mobile:</span>
+                        <a href="tel:+16617060922">
+                            661-706-0922
+                        </a>
+                    </p>
 
                 </div>
+
+
+
 
             </div>
 

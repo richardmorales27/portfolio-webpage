@@ -15,7 +15,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
 
-    background-color: #0b0f14;
+    background-color: #0b1016;
     color: #e6edf3;
 
     line-height: 1.6;
@@ -36,7 +36,7 @@ a {
 }
 
 section {
-    scroll-margin-top: 80px;
+    scroll-margin-top: 5px;
 }
 
 .section-label {
@@ -172,20 +172,193 @@ nav ul a:hover {
     font-size: 1.05rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================
+   Hero Image / Brush Effect
+======================================== */
+
 .hero-image {
+    position: relative;
+
     width: 42%;
+    min-height: 500px;
 
     display: flex;
-    justify-content: center;
     align-items: flex-end;
+    justify-content: center;
+
+    overflow: visible;
 }
 
-.hero-image img {
+
+
+
+
+
+
+
+
+
+
+
+
+/* Brush behind headshot */
+
+.hero-brush {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-image:
+        radial-gradient(
+            circle at center,
+            rgba(88, 166, 255, 0.20) 0%,
+            rgba(35, 95, 210, 0.08) 45%,
+            transparent 72%
+        ),
+        url("../assets/images/hero-brush.png");
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0.85;
+
+    z-index: 0;
+
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Headshot */
+
+.hero-headshot {
+    position: relative;
+    z-index: 1;
+
     width: 100%;
     max-width: 420px;
+    height: auto;
 
-    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.35));
+    object-fit: contain;
+
+    filter:
+        drop-shadow(0 20px 30px rgba(0, 0, 0, 0.35))
+        drop-shadow(0 0 30px rgba(88, 166, 255, 0.12));
+
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        black 0%,
+        black 86%,
+        rgba(0, 0, 0, 0.9) 90%,
+        rgba(0, 0, 0, 0.45) 96%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to bottom,
+        black 0%,
+        black 86%,
+        rgba(0, 0, 0, 0.9) 90%,
+        rgba(0, 0, 0, 0.45) 96%,
+        transparent 100%
+    );
 }
+
+/* Bottom fade */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ========================================
@@ -228,81 +401,134 @@ nav ul a:hover {
 }
 
 
-/* ========================================
-   Skills
-======================================== */
+/* =========================
+   Skills / Technology
+========================= */
 
 .skills {
-    padding: 90px 40px;
-
-    background-color: #0e141b;
-
-    border-top: 1px solid #21262d;
-    border-bottom: 1px solid #21262d;
+    padding: 80px 20px;
+    background: #0b0f14;
+    border-top: 1px solid #1f2933;
+    border-bottom: 1px solid #1f2933;
 }
 
 .skills-container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
-    gap: 50px;
+    gap: 24px;
 }
 
 .skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     text-align: center;
+    padding: 32px 24px;
+
+    border: 1px solid #27313d;
+    border-radius: 12px;
+
+    background: #101720;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
 }
 
-.skill-icon {
-    width: 95px;
-    height: 95px;
+.skill-card:hover {
+    transform: translateY(-6px);
+    border-color: #58a6ff;
+}
 
-    margin: 0 auto 22px;
+
+/* Icon */
+
+.skill-icon {
+    width: 72px;
+    height: 72px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    color: #58a6ff;
+    margin-bottom: 20px;
 
-    border: 1px solid #30363d;
+    border: 1px solid #364150;
     border-radius: 50%;
 
-    transition:
-        transform 0.2s ease,
-        border-color 0.2s ease;
-}
-
-.skill-card:hover .skill-icon {
-    transform: translateY(-4px);
-
-    border-color: #58a6ff;
+    color: #58a6ff;
 }
 
 .skill-icon svg {
-    width: 42px;
-    height: 42px;
+    width: 34px;
+    height: 34px;
 }
+
+
+/* Card Heading */
 
 .skill-card h3 {
-    margin-bottom: 10px;
-
-    color: #ffffff;
+    margin: 0 0 18px;
 
     font-size: 1rem;
-
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
+
+    color: #ffffff;
 }
 
-.skill-card p {
-    color: #8b949e;
+
+/* Capabilities */
+
+.skill-details {
+    margin-bottom: 24px;
+}
+
+.skill-details p {
+    margin: 6px 0;
 
     font-size: 0.95rem;
+    line-height: 1.5;
+
+    color: #c5d0dc;
 }
 
+
+/* Technology Stack */
+
+.skill-stack {
+    width: 100%;
+    margin-top: auto;
+    padding-top: 20px;
+
+    border-top: 1px solid #27313d;
+}
+
+.skill-stack span {
+    display: block;
+    margin-bottom: 10px;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    color: #58a6ff;
+}
+
+.skill-stack p {
+    margin: 5px 0;
+
+    font-size: 0.8rem;
+    line-height: 1.5;
+
+    color: #8b9aaa;
+}
 
 /* ========================================
    About
@@ -428,7 +654,7 @@ nav ul a:hover {
 
     overflow: hidden;
 
-    background-color: #0b0f14;
+    background-color: #0b1016;
 }
 
 .project-image img {
@@ -699,6 +925,28 @@ nav ul a:hover {
     text-decoration: none;
 }
 
+.contact-details {
+    margin-top: 30px;
+}
+
+.contact-details p {
+    margin: 6px 0;
+}
+
+.contact-label {
+    color: #ffffff;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.contact-details a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
 
 /* ========================================
    Footer
@@ -730,6 +978,27 @@ footer {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ========================================
@@ -767,7 +1036,7 @@ footer {
 
         padding: 20px;
 
-        background-color: #0b0f14;
+        background-color: #0b1016;
 
         border-bottom: 1px solid #21262d;
     }
@@ -797,11 +1066,8 @@ footer {
 
     .hero {
         min-height: auto;
-
         padding: 80px 20px;
-
         flex-direction: column;
-
         text-align: center;
     }
 
@@ -816,13 +1082,24 @@ footer {
     }
 
     .hero-image {
+        width: 100%;
+        min-height: 380px;
+
         margin-top: 20px;
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
     }
 
-    .hero-image img {
+    .hero-brush {
+        width: 350px;
+        height: 350px;
+    }
+
+    .hero-headshot {
         max-width: 320px;
     }
-
 
     /* Skills */
 
@@ -833,10 +1110,13 @@ footer {
     .skills-container {
         grid-template-columns: 1fr;
 
-        gap: 50px;
+        gap: 24px;
     }
 
-
+    .skill-card {
+        width: 100%;
+        padding: 28px 20px;
+    }
     /* About */
 
     .about {
